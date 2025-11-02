@@ -3,7 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll"
 export const About = () => {
   const frontendSkills = ["React", "Vue", "TypeScript", "TailwindCSS", "Svelte"]
 
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"]
+  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL", "C#", "Java", "Neo4j"]
 
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20">
@@ -54,7 +54,7 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> Master in Computer Engineering</strong> - Memorial University University of Newfoundland (2013-2016)
+                  <strong> Master Degree: Computer Engineering in Applied Science</strong> - Memorial University University of Newfoundland (2013-2016)
                 </li>
                 <li>Relevant Coursework: Data Structures, Web Development, Cloud Computing...</li>
               </ul>
