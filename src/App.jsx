@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "./App.css"
 import { LoadingScreen } from "./components/LoadingScreen"
 import { Navbar } from "./components/Navbar"
@@ -8,10 +8,20 @@ import { About } from "./components/sections/About"
 import { Projects } from "./components/sections/Projects"
 import "./index.css"
 import { Contact } from "./components/sections/Contact"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      easing: "ease-in-out", // default easing
+      once: true // whether animation should happen only once
+    })
+  }, [])
 
   return (
     <>
