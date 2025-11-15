@@ -60,7 +60,7 @@ export const About = () => {
                 {/* <li>Relevant Coursework: Data Structures, Web Development, Cloud Computing...</li> */}
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            {/* <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
@@ -77,31 +77,9 @@ export const About = () => {
                   </section>
                 </div>
 
-                <div>
-                  <h4 className="font-semibold"> Full Stack Web Developer at WaterWerks Agency (2021 - 2022) </h4>
-                  <section className="ml-2 mt-1 space-y-1">
-                    <p>• Full-stack developed websites by using PHP, JavaScript/jQuery, React, SCSS/CSS3, and HTML5 MySQL, and to use jQuery and bootstrap for building UI</p>
-                    <p>• Able to maintain and develop new functions for existing large-scale websites as requested</p>
-                    <p>• Developing block-based foundation theme with new functions for future use</p>
-                    <p>• Built a single-page application using React and storing data using MongoDB</p>
-                    <p>• Ability to develop a back-end API server using Node.js, Express, to interact with database using</p>
-                    <p>• Experience with developing custom SQL database table for websites on demand</p>
-                  </section>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold"> Full Stack Web Developer at JAC CO (2019 - 2021) </h4>
-                  <section className="ml-2 mt-1 space-y-1">
-                    <p>• Full-stack developed small-scaled web development by using PHP, JavaScript, SCSS, and HTML5 </p>
-                    <p>• Strong skills to modify and maintain existing large-scale websites to meet requirements</p>
-                    <p>• Ability to develop new custom foundation theme with different block types and functions</p>
-                    <p>• Able to create websites through cPanel using AWS service and Cloudflare</p>
-                    <p>• Developed different animations, ECharts and canvas to beautify the websites like AOS</p>
-                    <p>• Collaborated with team to deliver optimized solutions based on requirements</p>
-                  </section>
-                </div>
+                
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </RevealOnScroll>

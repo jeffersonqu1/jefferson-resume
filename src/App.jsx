@@ -10,6 +10,8 @@ import "./index.css"
 import { Contact } from "./components/sections/Contact"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import Rain from "./components/Rain"
+import { Experience } from "./components/sections/Experience"
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -32,6 +34,8 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Rain />
+        <Experience />
         {/* <Contact /> */}
       </div>
     </>
