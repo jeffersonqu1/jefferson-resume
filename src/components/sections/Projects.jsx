@@ -1,33 +1,37 @@
 import { RevealOnScroll } from "../RevealOnScroll"
 import ThreeDSlider from "../ThreeDSlider"
+import GenoaImg from "../../assets/images/GenoaDesign.jpg"
+import WaterWerksImg from "../../assets/images/WaterWerksAgency.jpg"
+import JACImg from "../../assets/images/JAC.jpg"
+import MemorialImg from "../../assets/images/MemorialUniversity.jpg"
 
 export const Projects = () => {
-  // const slides = [
-  //   {
-  //     image: "../../assets/images/GenoaDesign.jpg",
-  //     title: "AI Photo Analyzer"
-  //   },
-  //   {
-  //     image: "../../assets/images/WaterWerksAgency.jpg",
-  //     title: "SQL Automation Tool"
-  //   },
-  //   {
-  //     image: "../../assets/images/JAC.jpg",
-  //     title: "Neo4j Graph Explorer"
-  //   },
-  //   {
-  //     image: "../../assets/images/MemorialUniversity.jpg",
-  //     title: "React Portfolio Website"
-  //   }
-  // ]
+  const slides = [
+    {
+      image: `${GenoaImg}`,
+      title: "Genoa Design International"
+    },
+    {
+      image: `${WaterWerksImg}`,
+      title: "WaterWerks Agency"
+    },
+    {
+      image: `${JACImg}`,
+      title: "JAC"
+    }
+    // {
+    //   image: `${MemorialImg}`,
+    //   title: "React Portfolio Website"
+    // }
+  ]
 
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center py-20">
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"> Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* <ThreeDSlider slides={slides} /> */}
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"> Companies</h2>
+          <div>
+            <ThreeDSlider slides={slides} />
             {/* <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2"> Cloud Platform</h3>
               <p className="text-gray-400 mb-4">Scalable cloud infrastructure management with real-time monitoring and automated scaling.</p>
