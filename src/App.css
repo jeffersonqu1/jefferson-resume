@@ -146,3 +146,36 @@
 .nav-button:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-icon {
+  color: #ddd;
+  font-size: 28px;
+  transition: 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #4b9fff; /* LinkedIn blue-ish */
+  transform: scale(1.2);
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #888;
+}

@@ -13,6 +13,7 @@ import "aos/dist/aos.css"
 import Rain from "./components/Rain"
 import { Experience } from "./components/sections/Experience"
 import BackgroundMusic from "./components/BackgroundMusic"
+import Footer from "./components/sections/Footer"
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -39,6 +40,7 @@ function App() {
         <Experience />
         <BackgroundMusic />
         {/* <Contact /> */}
+        <Footer />
       </div>
     </>
   )

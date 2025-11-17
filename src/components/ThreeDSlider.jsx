@@ -1,9 +1,5 @@
 import React, { useState } from "react"
 import "../App.css"
-import GenoaImg from "../assets/images/GenoaDesign.jpg"
-import WaterWerksImg from "../assets/images/WaterWerksAgency.jpg"
-import JACImg from "../assets/images/JAC.jpg"
-import MemorialImg from "../assets/images/MemorialUniversity.jpg"
 
 export default function ThreeDSlider({ slides }) {
   const [current, setCurrent] = useState(0)

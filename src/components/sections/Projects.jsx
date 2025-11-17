@@ -3,7 +3,8 @@ import ThreeDSlider from "../ThreeDSlider"
 import GenoaImg from "../../assets/images/GenoaDesign.jpg"
 import WaterWerksImg from "../../assets/images/WaterWerksAgency.jpg"
 import JACImg from "../../assets/images/JAC.jpg"
-import MemorialImg from "../../assets/images/MemorialUniversity.jpg"
+import MemorialImg from "../../assets/images/MemorialLogo.jpg"
+import MemorialLogo from "../../assets/images/MemorialLogo.png"
 
 export const Projects = () => {
   const slides = [
@@ -18,11 +19,11 @@ export const Projects = () => {
     {
       image: `${JACImg}`,
       title: "JAC"
+    },
+    {
+      image: `${MemorialLogo}`,
+      title: "Memorial University"
     }
-    // {
-    //   image: `${MemorialImg}`,
-    //   title: "React Portfolio Website"
-    // }
   ]
 
   return (
