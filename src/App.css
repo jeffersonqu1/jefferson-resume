@@ -147,6 +147,34 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* === Tablets (width <= 768px) === */
+@media (max-width: 768px) {
+  /* .slider-container {
+    width: 350px;
+    height: 768px;
+    perspective: 900px;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    height: 65%;
+  } */
+
+  .nav-button {
+    font-size: 28px;
+    left: -25px;
+    right: -25px;
+    top: 0;
+  }
+
+  .nav-button.left {
+    display: none;
+  }
+  .nav-button.right {
+    right: -25px;
+  }
+}
+
 /* Footer */
 .footer {
   width: 100%;
