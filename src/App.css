@@ -148,8 +148,8 @@
 }
 
 /* === Tablets (width <= 768px) === */
-@media (max-width: 768px) {
-  /* .slider-container {
+/* @media (max-width: 768px) {
+  .slider-container {
     width: 350px;
     height: 768px;
     perspective: 900px;
@@ -158,7 +158,7 @@
 
   .carousel-item {
     height: 65%;
-  } */
+  }
 
   .nav-button {
     font-size: 28px;
@@ -173,7 +173,7 @@
   .nav-button.right {
     right: -25px;
   }
-}
+} */
 
 /* Footer */
 .footer {

@@ -35,9 +35,9 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
-        <Projects />
         <Rain />
         <Experience />
+        <Projects />
         <BackgroundMusic />
         {/* <Contact /> */}
         <Footer />

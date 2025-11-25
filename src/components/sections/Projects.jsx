@@ -27,10 +27,10 @@ export const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center py-20">
+    <section id="work" className="min-h-screen flex items-center justify-center py-20">
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"> Companies</h2>
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"> Work</h2>
           <div>
             <ThreeDSlider slides={slides} />
             {/* <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
