@@ -14,6 +14,7 @@ import Rain from "./components/Rain"
 import { Experience } from "./components/sections/Experience"
 import BackgroundMusic from "./components/BackgroundMusic"
 import Footer from "./components/sections/Footer"
+import { WorkTimeLine } from "./components/sections/WorkTimeLine"
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -30,14 +31,15 @@ function App() {
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
-      <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"} bg-black text-gray-100`}>
+      <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"} bg-gradient-to-r from-white-500 to-cyan-400 text-gray-100`}>
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
         <Rain />
         <Experience />
-        <Projects />
+        {/* <Projects /> */}
+        {/* <WorkTimeLine /> */}
         <BackgroundMusic />
         {/* <Contact /> */}
         <Footer />

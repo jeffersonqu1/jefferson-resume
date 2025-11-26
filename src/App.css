@@ -137,10 +137,10 @@
 }
 
 .left {
-  left: -50px;
+  left: -20%;
 }
 .right {
-  right: -50px;
+  right: -20%;
 }
 
 .nav-button:hover {
@@ -179,7 +179,7 @@
 .footer {
   width: 100%;
   padding: 20px 0;
-  background: #111;
+  /* background: #111; */
   color: #ddd;
   text-align: center;
   margin-top: 50px;

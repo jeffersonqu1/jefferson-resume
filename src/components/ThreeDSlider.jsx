@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "../App.css"
 
 export default function ThreeDSlider({ slides }) {
@@ -22,6 +22,17 @@ export default function ThreeDSlider({ slides }) {
   //     title: "React Portfolio Website"
   //   }
   // ]
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  // Auto rotate
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => (prev + 1) % slides.length)
+    }, 3000) // 3 seconds
+
+    return () => clearInterval(interval)
+  }, [])
 
   const prevSlide = () => {
     setCurrent((current - 1 + slides.length) % slides.length)

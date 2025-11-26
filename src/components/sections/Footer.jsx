@@ -4,7 +4,7 @@ import "../../App.css"
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer ">
       <div className="footer-content">
         {/* LinkedIn */}
         <a href="https://www.linkedin.com/in/zhaopeng-qu/" target="_blank" rel="noopener noreferrer" className="footer-icon">
