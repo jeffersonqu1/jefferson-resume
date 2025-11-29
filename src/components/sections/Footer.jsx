@@ -17,7 +17,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <p className="footer-text">© 2025 Jefferson Qu. All rights reserved.</p>
+      <p className="footer-text text-gray-200">© 2025 Jefferson Qu.</p>
     </footer>
   )
 }

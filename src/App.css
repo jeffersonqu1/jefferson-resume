@@ -33,6 +33,15 @@
   perspective: 1000px; /* enables 3D flip */
 }
 
+@media (max-width: 768px) {
+  .flip-card {
+    width: 100%;
+    height: auto;
+    min-width: 350px;
+    min-height: 350px;
+  }
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -205,5 +214,15 @@
 
 .footer-text {
   font-size: 14px;
-  color: #888;
+}
+
+.min-timeline {
+  min-height: 10vh;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .min-timeline {
+    min-height: 15vh;
+  }
 }
