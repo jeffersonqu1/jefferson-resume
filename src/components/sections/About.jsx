@@ -13,7 +13,7 @@ export const About = () => {
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">I am a passionate developer with strong skills in developing scalable web applications, troubleshooting the issues and maintain the websites. </p>
-            <p className="text-gray-300 mb-6">I am also able to collaborate with team members to deliver the solutions and and someone who is good at learning new things. </p>
+            <p className="text-gray-300 mb-6">I am able to collaborate with team members to deliver the solutions and and someone who is good at learning new things. </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
