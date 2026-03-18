@@ -1,14 +1,29 @@
 import { useEffect } from "react"
+import { Link, useNavigate, useLocation } from "react-router-dom"
 import Logo from "../assets/images/jqu-logo.svg"
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#timeline", label: "Timeline" },
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "timeline", label: "Timeline" },
 ]
 
+function scrollToSection(id, navigate, location) {
+  if (location.pathname !== "/") {
+    navigate("/")
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+    }, 100)
+  } else {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+  }
+}
+
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+  const navigate = useNavigate()
+  const location = useLocation()
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : ""
   }, [menuOpen])
@@ -17,7 +32,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.92)] backdrop-blur-md border-b border-white/5">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="#home" className="hover:scale-110 transition-transform">
+          <a
+            href="#"
+            onClick={(e) => { e.preventDefault(); scrollToSection("home", navigate, location) }}
+            className="hover:scale-110 transition-transform"
+          >
             <img src={Logo} alt="J.Qu" className="h-10 w-auto" />
           </a>
 
@@ -32,15 +51,22 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </button>
 
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map(({ href, label }) => (
+            {navLinks.map(({ id, label }) => (
               <a
-                key={href}
-                href={href}
-                className="text-gray-400 hover:text-white text-sm font-medium tracking-wide uppercase transition-colors duration-200"
+                key={id}
+                href="#"
+                onClick={(e) => { e.preventDefault(); scrollToSection(id, navigate, location) }}
+                className="text-gray-400 hover:text-white text-sm font-medium tracking-wide uppercase transition-colors duration-200 cursor-pointer"
               >
                 {label}
               </a>
             ))}
+            <Link
+              to="/3d-viewer"
+              className="text-gray-400 hover:text-white text-sm font-medium tracking-wide uppercase transition-colors duration-200"
+            >
+              3D Viewer
+            </Link>
           </div>
         </div>
       </div>

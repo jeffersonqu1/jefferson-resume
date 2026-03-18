@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { lazy, Suspense, useEffect, useState } from "react"
+import { Routes, Route } from "react-router-dom"
 import "./App.css"
 import { LoadingScreen } from "./components/LoadingScreen"
 import { Navbar } from "./components/Navbar"
@@ -16,15 +17,17 @@ import BackgroundMusic from "./components/BackgroundMusic"
 import Footer from "./components/sections/Footer"
 import { WorkTimeLine } from "./components/sections/WorkTimeLine"
 
+const ThreeDViewer = lazy(() => import("./pages/ThreeDViewer"))
+
 function App() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
-      easing: "ease-in-out", // default easing
-      once: true // whether animation should happen only once
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true
     })
   }, [])
 
@@ -34,15 +37,32 @@ function App() {
       <div className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"} bg-gradient-to-r from-white-500 to-cyan-400 text-gray-200`}>
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Home />
-        <About />
-        <Rain />
-        <Experience />
-        {/* <Projects /> */}
-        <WorkTimeLine />
-        <BackgroundMusic />
-        {/* <Contact /> */}
-        <Footer />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <About />
+                <Rain />
+                <Experience />
+                {/* <Projects /> */}
+                <WorkTimeLine />
+                <BackgroundMusic />
+                {/* <Contact /> */}
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/3d-viewer"
+            element={
+              <Suspense fallback={<div className="h-screen flex items-center justify-center text-gray-400">Loading 3D Viewer...</div>}>
+                <ThreeDViewer />
+              </Suspense>
+            }
+          />
+        </Routes>
       </div>
     </>
   )
