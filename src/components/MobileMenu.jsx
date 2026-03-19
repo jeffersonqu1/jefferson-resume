@@ -1,4 +1,4 @@
-import { Link, useNavigate, useLocation } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 
 const navLinks = [
   { id: "home", label: "Home" },
@@ -41,15 +41,28 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
           {label}
         </a>
       ))}
-      <Link
-        to="/3d-viewer"
+      <a
+        href="https://3d-model-viewer-opal-iota.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold text-gray-300 hover:text-white my-4 transition-all duration-300
                     ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         style={{ transitionDelay: menuOpen ? `${navLinks.length * 80}ms` : "0ms" }}
       >
         3D Viewer
-      </Link>
+      </a>
+      <a
+        href="https://picture-compression-ruddy.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => setMenuOpen(false)}
+        className={`text-2xl font-semibold text-gray-300 hover:text-white my-4 transition-all duration-300
+                    ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+        style={{ transitionDelay: menuOpen ? `${(navLinks.length + 1) * 80}ms` : "0ms" }}
+      >
+        Picture Compressor
+      </a>
     </div>
   )
 }

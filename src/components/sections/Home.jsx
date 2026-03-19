@@ -4,27 +4,14 @@ export const Home = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative">
       <RevealOnScroll>
-        <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">Hi, I'm Zhaopeng Qu</h1>
-
-          <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">Software Developer experienced in building scalable cloud applications, microservices, and full-stack web systems. Skilled in React, C#, Node.js, and SQL-based database systems with hands-on experience designing APIs and implementing CI/CD pipelines in Azure environments.</p>
-          <div className="flex justify-center space-x-4">
-            <a href="#experience" className="bg-gradient-to-r from-yellow-500 to-cyan-400 text-gray-200 py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
-              View Working Experience
-            </a>
-
-            <a href="#about" className="bg-gradient-to-r from-red-500 to-cyan-400 text-gray-200 py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
-              About Me
-            </a>
-
-            <a
-              href="#contact"
-              className="hidden border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 
-             hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10"
-            >
-              Contact Me
-            </a>
-          </div>
+        <div className="text-center z-10 px-4 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base font-medium tracking-widest uppercase text-cyan-400 mb-4">Software Developer</p>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
+            Hi, I'm Zhaopeng Qu
+          </h1>
+          <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
+            Experienced in building scalable cloud applications, microservices, and full-stack web systems. Skilled in React, C#, Node.js, and SQL-based database systems with hands-on experience designing APIs and implementing CI/CD pipelines in Azure environments. Passionate about leveraging AI and large language models to build intelligent, user-centric applications.
+          </p>
         </div>
       </RevealOnScroll>
     </section>

@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { Link, useNavigate, useLocation } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import Logo from "../assets/images/jqu-logo.svg"
 
 const navLinks = [
@@ -61,12 +61,22 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 {label}
               </a>
             ))}
-            <Link
-              to="/3d-viewer"
+            <a
+              href="https://3d-model-viewer-opal-iota.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-white text-sm font-medium tracking-wide uppercase transition-colors duration-200"
             >
               3D Viewer
-            </Link>
+            </a>
+            <a
+              href="https://picture-compression-ruddy.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-sm font-medium tracking-wide uppercase transition-colors duration-200"
+            >
+              Picture Compressor
+            </a>
           </div>
         </div>
       </div>
