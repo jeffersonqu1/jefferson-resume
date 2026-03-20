@@ -77,6 +77,14 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             >
               Picture Compressor
             </a>
+            <a
+              href="https://frontend-five-gamma-49.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-sm font-medium tracking-wide uppercase transition-colors duration-200"
+            >
+              Drawing Different
+            </a>
           </div>
         </div>
       </div>

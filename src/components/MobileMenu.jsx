@@ -63,6 +63,17 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       >
         Picture Compressor
       </a>
+      <a
+        href="https://frontend-five-gamma-49.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => setMenuOpen(false)}
+        className={`text-2xl font-semibold text-gray-300 hover:text-white my-4 transition-all duration-300
+                    ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+        style={{ transitionDelay: menuOpen ? `${(navLinks.length + 2) * 80}ms` : "0ms" }}
+      >
+        Drawing Different
+      </a>
     </div>
   )
 }
