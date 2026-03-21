@@ -85,6 +85,14 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             >
               Drawing Different
             </a>
+            <a
+              href="https://docflow-app-zeta.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white text-sm font-medium tracking-wide uppercase transition-colors duration-200"
+            >
+              Doc Flow
+            </a>
           </div>
         </div>
       </div>
