@@ -18,8 +18,8 @@ export const About = () => {
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">About Me</h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">Software Developer experienced in building scalable cloud applications, microservices, and full-stack web systems. Skilled in React, C#, Node.js, and SQL-based database systems with hands-on experience designing APIs and implementing CI/CD pipelines in Azure environments.</p>
-            <p className="text-gray-300 mb-6">Experienced in developing AI-powered applications and agent-based systems using Claude Code, including multi-agent architectures, tool integrations, and workflow automation solutions.</p>
+            <p className="text-gray-300 mb-6">Full Stack Software Developer with 5+ years of experience building enterprise web applications, cloud-native microservices, and scalable REST APIs using C#, .NET, React, TypeScript, and Node.js. Experienced in SQL Server database design, Azure DevOps CI/CD, and Agile software delivery.</p>
+            <p className="text-gray-300 mb-6">Passionate about AI-assisted software engineering, leveraging Claude Code, GitHub Copilot, and multi-agent workflows to accelerate development and improve engineering productivity.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
