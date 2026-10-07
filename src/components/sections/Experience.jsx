@@ -12,7 +12,7 @@ export const Experience = () => {
     },
     {
       title: "Full Stack Web Developer",
-      company: "WaterWerks Agency",
+      company: " WaterWerks Agency ",
       period: "Oct 2021 – Jul 2022",
       details: ["• Delivered full-stack development across 10+ production websites, implementing new features and performance improvements.", "• Built reusable WordPress block-based themes and React/MongoDB single-page applications for scalable client projects.", "• Built backend services supporting over 10 production client websites with improved API response times and maintainable architecture."]
     },
